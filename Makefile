@@ -1,6 +1,6 @@
 VERSION=0.1
 NAME=0find
-FILES=0find 0find.py
+FILES=0find zerofind.py
 BUILD=0inst
 
 package:

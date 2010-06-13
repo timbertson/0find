@@ -1,0 +1,22 @@
+0find is a simple program that uses zeroinstall's python API to
+get the local path implementing a given interface. This is useful
+for passing into scripts that are not themselves managed via 0install.
+
+sample usage:
+
+	0launch http://gfxmonk.net/dist/0install/0find.xml http://gfxmonk.net/dist/0install/file-finder.xml
+
+will (on my machine) print:
+
+	/home/tim/.cache/0install.net/implementations/sha1new=73323f6793e85192518dc4eaa39ad32b4377f78a
+
+You now have a concrete path you can pass into utilities that require
+a path, rather than a 0install interface.
+
+You can also use the zerofind python interface directly, if you prefer:
+
+	>>> import zerofind
+	>>> zerofind.find('http://gfxmonk.net/dist/0install/file-finder.xml')
+	u'/home/tim/.cache/0install.net/implementations/sha1new=73323f6793e85192518dc4eaa39ad32b4377f78a'
+
+
