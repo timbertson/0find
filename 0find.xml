@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface xmlns="http://zero-install.sourceforge.net/2004/injector/interface" uri="http://gfxmonk.net/dist/0install/0find.xml">
+  <name>0find</name>
+  <summary>find the implementation dir for a given 0install interface</summary>
+  <description>
+    find the implementation dir for a given 0install interface
+  </description>
+  <group main="0find">
+    <implementation id="sha1new=3224b2d66c51371ac0d5d0742d91be399e3568fa" released="2010-06-13" version="0.1">
+      <manifest-digest sha256="4c1f1fb27e5710da297abee3e91df5235a43be634d3b32aa732005ffc20f35eb"/>
+      <archive href="http://gfxmonk.net/dist/0install/0find/0find-0.1.tgz" size="347"/>
+    </implementation>
+  </group>
+</interface>
