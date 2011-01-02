@@ -1,19 +1,37 @@
 <?xml version="1.0" ?>
 <?xml-stylesheet type='text/xsl' href='interface.xsl'?>
 <interface uri="http://gfxmonk.net/dist/0install/0find.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
-  <name>0find</name>
-  <summary>find the implementation dir for a given 0install interface</summary>
-  <description>
-
+	<name>0find</name>
+	<summary>find the implementation dir for a given 0install interface</summary>
+	<publish mode="0tools" xmlns="http://gfxmonk.net/dist/0install"/>
+	<description>
 0find is a simple program that uses zeroinstall's python API to
 get the local path implementing a given interface. This is useful
 for passing into scripts that are not themselves managed via 0install.
 
-  </description>
-  <group main="0find">
-    <implementation id="sha1new=4af5a1b53d6083f02cdd0bf737df89b893b36053" released="2010-06-13" version="0.1">
-    <manifest-digest sha256="29dbf4b0c228af1feb494a372fdbecdc9c88554471544c5d73ae148abaa74c88"/>
-      <archive href="http://gfxmonk.net/dist/0install/0find/0find-0.1.tgz" size="405"/>
-    </implementation>
-  </group>
+sample usage:
+
+	0launch http://gfxmonk.net/dist/0install/0find.xml http://gfxmonk.net/dist/0install/file-finder.xml
+
+will (on my machine) print:
+
+	/home/tim/.cache/0install.net/implementations/sha1new=73323f6793e85192518dc4eaa39ad32b4377f78a
+
+You now have a concrete path you can pass into utilities that require
+a path, rather than a 0install interface.
+
+You can also use the zerofind python interface directly, if you prefer:
+
+	&gt;&gt;&gt; import zerofind
+	&gt;&gt;&gt; zerofind.find('http://gfxmonk.net/dist/0install/file-finder.xml')
+	u'/home/tim/.cache/0install.net/implementations/sha1new=73323f6793e85192518dc4eaa39ad32b4377f78a'
+
+
+	</description>
+	<group main="0find">
+		<implementation id="sha1new=4af5a1b53d6083f02cdd0bf737df89b893b36053" released="2010-06-13" version="0.1">
+			<manifest-digest sha256="29dbf4b0c228af1feb494a372fdbecdc9c88554471544c5d73ae148abaa74c88"/>
+			<archive href="http://gfxmonk.net/dist/0install/0find/0find-0.1.tgz" size="405"/>
+		</implementation>
+	</group>
 </interface>
