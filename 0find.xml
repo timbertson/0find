@@ -30,11 +30,15 @@ You can also use the zerofind python interface directly, if you prefer:
 	</description>
 	<group main="0find">
 		<requires interface="http://0install.net/2007/interfaces/ZeroInstall.xml">
-			<environment insert="" name="PYTHONPATH" mode="prepend"/>
+			<environment insert="" mode="prepend" name="PYTHONPATH"/>
 		</requires>
 		<implementation id="sha1new=4af5a1b53d6083f02cdd0bf737df89b893b36053" released="2010-06-13" version="0.1">
 			<manifest-digest sha256="29dbf4b0c228af1feb494a372fdbecdc9c88554471544c5d73ae148abaa74c88"/>
 			<archive href="http://gfxmonk.net/dist/0install/0find/0find-0.1.tgz" size="405"/>
 		</implementation>
+		<implementation id="sha1new=36342e8a0f4df0c5e36cdb52bc39abf45590371f" released="2011-01-21" version="0.1.1">
+    <manifest-digest sha256="a5e949a691c792ce02be551b15fb8e34bcab0adcd8a0bb33774e8ee9cfa5de57"/>
+    <archive href="http://gfxmonk.net/dist/0install/0find/0find-0.1.1.tgz" size="451"/>
+  </implementation>
 	</group>
 </interface>
