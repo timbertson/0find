@@ -29,6 +29,9 @@ You can also use the zerofind python interface directly, if you prefer:
 
 	</description>
 	<group main="0find">
+		<requires interface="http://0install.net/2007/interfaces/ZeroInstall.xml">
+			<environment insert="" name="PYTHONPATH" mode="prepend"/>
+		</requires>
 		<implementation id="sha1new=4af5a1b53d6083f02cdd0bf737df89b893b36053" released="2010-06-13" version="0.1">
 			<manifest-digest sha256="29dbf4b0c228af1feb494a372fdbecdc9c88554471544c5d73ae148abaa74c88"/>
 			<archive href="http://gfxmonk.net/dist/0install/0find/0find-0.1.tgz" size="405"/>
