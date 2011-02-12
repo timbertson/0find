@@ -1,9 +1,9 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <?xml-stylesheet type='text/xsl' href='interface.xsl'?>
-<interface uri="http://gfxmonk.net/dist/0install/0find.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+<interface xmlns="http://zero-install.sourceforge.net/2004/injector/interface" uri="http://gfxmonk.net/dist/0install/0find.xml">
 	<name>0find</name>
 	<summary>find the implementation dir for a given 0install interface</summary>
-	<publish mode="0tools" xmlns="http://gfxmonk.net/dist/0install"/>
+	<publish xmlns="http://gfxmonk.net/dist/0install" mode="0tools"/>
 	<description>
 0find is a simple program that uses zeroinstall's python API to
 get the local path implementing a given interface. This is useful
@@ -37,8 +37,12 @@ You can also use the zerofind python interface directly, if you prefer:
 			<archive href="http://gfxmonk.net/dist/0install/0find/0find-0.1.tgz" size="405"/>
 		</implementation>
 		<implementation id="sha1new=36342e8a0f4df0c5e36cdb52bc39abf45590371f" released="2011-01-21" version="0.1.1">
-    <manifest-digest sha256="a5e949a691c792ce02be551b15fb8e34bcab0adcd8a0bb33774e8ee9cfa5de57"/>
-    <archive href="http://gfxmonk.net/dist/0install/0find/0find-0.1.1.tgz" size="451"/>
-  </implementation>
+			<manifest-digest sha256="a5e949a691c792ce02be551b15fb8e34bcab0adcd8a0bb33774e8ee9cfa5de57"/>
+			<archive href="http://gfxmonk.net/dist/0install/0find/0find-0.1.1.tgz" size="451"/>
+		</implementation>
+		<implementation id="sha1new=b53f6f981f9845495bdfaf39ce337beb87dc560d" released="2011-02-12" version="0.1.2">
+			<manifest-digest sha256="b5ad67a7d60de2a34cc3c36231b48fd057b2b67f007330708c7a4c6ca3f4aeee"/>
+			<archive href="http://gfxmonk.net/dist/0install/0find/0find-0.1.2.tgz" size="485"/>
+		</implementation>
 	</group>
 </interface>

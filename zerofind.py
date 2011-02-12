@@ -7,7 +7,8 @@ from zeroinstall import helpers
 from zeroinstall import zerostore
 
 def find(url):
-	selections = helpers.ensure_cached(url, command='')
+	del os.environ['DISPLAY']
+	selections = helpers.ensure_cached(url, command=None)
 	if not selections:
 		return None
 	selection = selections.selections[url]
@@ -17,7 +18,7 @@ def find(url):
 		return None
 	if os.path.exists(selection.id):
 		return selection.id
-	return zerostore.Stores().lookup(selection.id)
+	return zerostore.Stores().lookup_any(selection.digests)
 
 if __name__ == '__main__':
 	url = sys.argv[1]
