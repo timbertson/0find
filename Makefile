@@ -1,2 +1,2 @@
 package:
-	mkzero-gfxmonk 0find.xml
+	mkzero-gfxmonk -p zerofind.py -p 0find 0find.xml
