@@ -7,7 +7,9 @@ from zeroinstall import helpers
 from zeroinstall import zerostore
 
 def find(url):
-	del os.environ['DISPLAY']
+	try:
+		del os.environ['DISPLAY']
+	except KeyError: pass
 	selections = helpers.ensure_cached(url, command=None)
 	if not selections:
 		return None

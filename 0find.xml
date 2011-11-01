@@ -49,5 +49,9 @@ You can also use the zerofind python interface directly, if you prefer:
 			<manifest-digest sha256="049017d76ef90e8fe67c92de1857d09b9e21c1156ca2ca29a3d4e938c098fe19"/>
 			<archive href="http://gfxmonk.net/dist/0install/0find/0find-0.1.2-post1.tgz" size="517"/>
 		</implementation>
+		<implementation id="sha1new=04b639c2a5e90a2bc40f6f8a4dea72420992c31e" released="2011-11-01" version="0.1.4">
+			<manifest-digest sha256="0c372b96676c097379d24c6f34761ccba4839f9ac70b9a54b98915322862a765"/>
+			<archive href="http://gfxmonk.net/dist/0install/0find/0find-0.1.4.tgz" size="552"/>
+		</implementation>
 	</group>
 </interface>
