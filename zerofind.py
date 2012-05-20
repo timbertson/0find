@@ -10,6 +10,8 @@ def find(url):
 	try:
 		del os.environ['DISPLAY']
 	except KeyError: pass
+	if os.path.isfile(url):
+		url = os.path.abspath(url)
 	selections = helpers.ensure_cached(url, command=None)
 	if not selections:
 		return None
